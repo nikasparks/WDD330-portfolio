@@ -35,7 +35,58 @@
             are too easy to click and then wipe out all the data that's been
             entered. So think very carefully before using one in a form.
           </li>
-          <li></li>
+          <li>
+            "By convention, the names of constructor functions or class
+            declarations are capitalized, which is the convention used for
+            classes in class-based programming languages."
+          </li>
+          <li>
+            "These are sometimes called class methods in other programming
+            languages. A static method is called by the class directly rather
+            than by instances of the class."
+          </li>
+          <li>
+            "JavaScript uses a prototypal inheritance model. This means that
+            every class has a prototype property that is shared by every
+            instance of the class. So any properties or methods of a class's
+            prototype can be accessed by every object instantiated by that
+            class."
+          </li>
+          <li>
+            "A golden rule to remember is: Never use arrays or objects as a
+            default value in prototype. This is not a problem if arrays or
+            objects are set as default values from within the constructor
+            function in the class declaration."
+          </li>
+          <li>
+            "To summarize, the following points should be considered when using
+            classes and prototypes to create instances:
+            <ul>
+              <li>
+                Create a class declaration that deals with any initialization,
+                shared properties and methods.
+              </li>
+
+              <li>
+                Any extra methods and properties that need to be augmented to
+                the class declaration after it's been defined can be added to
+                the prototype. These will be added to all instances, even those
+                that have already been created.
+              </li>
+
+              <li>
+                Add any properties or methods that are individual to a
+                particular instance can be augmented using assignment to that
+                object (a mixin could be used to add multiple properties at
+                once, as we'll see later).
+              </li>
+
+              <li>
+                Be careful when overwriting the prototype completely ― the
+                constructor class needs to be reset."
+              </li>
+            </ul>
+          </li>
         </ol>
         <h3>Questions:</h3>
         <ol>
