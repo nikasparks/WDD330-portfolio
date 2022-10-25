@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDos</title>
+    <script src="scripts/main.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles/ToDos.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1 id="tdTitle">Todos:</h1>
+        <div id="itemList">
+          <div id="filter">
+            <span id="totalTasks">Left</span>
+            <input type="radio" id="filtAll" />All
+            <input type="radio" id="filtActive" />Active
+            <input type="radio" id="filtDone" />Completed
+          </div>
+        </div>
+        <input
+          type="text"
+          name="ToDoItems"
+          id="enterItems"
+          placeholder="Enter task"
+        />
+        <!-- <textarea
+          name="ToDoItems"
+          id="enterItems"
+          cols="20"
+          rows="3"
+        ></textarea> -->
+        <button type="button" id="addItem">➕</button>
+      </section>
+    </main>
+  </body>
+</html>
