@@ -16,14 +16,14 @@ function buildList(taskEntered){
         listComplete.setAttribute('type','checkbox');
 
 
+        listItem.appendChild(listComplete);
         listItem.appendChild(listText);
         listText.textContent = taskEntered;
         listItem.appendChild(listBtn);
         listBtn.textContent = '❌';
-        listItem.appendChild(listComplete);
         listSection.appendChild(listItem);
 
-        // listBtn.addEventListener('click',() => {listSection.removeChild(listItem);})
+        listBtn.addEventListener('click',() => {listSection.removeChild(listItem);})
        
     }
     // else{
