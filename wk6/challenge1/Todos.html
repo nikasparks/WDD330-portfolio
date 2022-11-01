@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDos</title>
     <script src="scripts/main.js" type="module" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/ToDos.css" />
   </head>
   <body>
     <main>
       <section>
         <h1 id="tdTitle">Todos:</h1>
-        <div id="itemList">
-          <div id="filter">
-            <span id="totalTasks">Left</span>
-            <input type="radio" id="filtAll" />All
-            <input type="radio" id="filtActive" />Active
-            <input type="radio" id="filtDone" />Completed
-          </div>
+        <div id="itemListContainer">
+          <ul id="itemList"></ul>
+        </div>
+        <div id="filter">
+          <span id="totalTasks">Total Count:</span>
+          <input
+            type="radio"
+            name="filter"
+            id="filtAll"
+            class="filters"
+            checked
+          />All
+          <input
+            type="radio"
+            name="filter"
+            id="filtActive"
+            class="filters"
+          />Active
+          <input
+            type="radio"
+            name="filter"
+            id="filtDone"
+            class="filters"
+          />Completed
         </div>
         <input
           type="text"
@@ -26,13 +47,8 @@
           id="enterItems"
           placeholder="Enter task"
         />
-        <!-- <textarea
-          name="ToDoItems"
-          id="enterItems"
-          cols="20"
-          rows="3"
-        ></textarea> -->
         <button type="button" id="addItem">➕</button>
+        <span id="out"></span>
       </section>
     </main>
   </body>
