@@ -10,7 +10,7 @@ body {
 	justify-content: center;
 	font-size: 18px;
 	font-family: Acme, Arial, sans-serif;
-    background-color: rgb(107, 181, 250);
+    background-color: rgb(49, 93, 254);
 }
 
 h1 {
@@ -21,7 +21,7 @@ main {
 	margin: 0.5rem auto;
 	border: 1px solid #999;
 	padding: 0.5rem;
-	background-color: #bed;
+	background-color: rgb(162, 216, 255);
 	display: grid;
 	grid-template-columns: 1fr;
 	width: 95%;
