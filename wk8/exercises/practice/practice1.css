@@ -1,0 +1,45 @@
+body{
+    background-color: lightsteelblue;
+    margin-left: 100px;
+}
+
+span{
+    display: inline-block;
+    transition: transform 1.5s ease-out 50ms, color 0.1s linear 50ms;
+}
+
+#transforms{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#p1:hover {
+    color: #1a1692;  
+    transform: translateX(100px);
+}
+
+#p2:hover {
+    color: #1a1692;   
+    transform: translate(100px,30px);
+}
+
+#p3:hover {
+    color: #1a1692;  
+    transform: scale(1.8);
+}
+
+#p4:hover {
+    color: #1a1692;  
+    transform: scale(0.8);
+}
+
+#p5:hover {
+    color: #1a1692;  
+    transform: rotate(60deg);
+}
+
+#p6:hover {
+    color: #1a1692;  
+    transform: skew(-10deg,50deg);
+}
