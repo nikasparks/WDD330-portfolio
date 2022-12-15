@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./scripts/memory.js" defer></script>
     <link rel="stylesheet" href="./styles/memory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lexend+Deca:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -15,40 +21,187 @@
   <body>
     <header>
       <h1>Memory Match</h1>
-      <h2>Pick two cards</h2>
+      <h2 id="message">Pick two cards</h2>
     </header>
     <main>
-      <button type="button" class="hiding" id="message"></button>
+      <div id="choiceBtns">
+        <button
+          type="button"
+          id="theme1"
+          value="harry_potter_db.json"
+          class="themeChoice"
+        >
+          Harry Potter Characters
+        </button>
+        <button
+          type="button"
+          id="theme2"
+          value="classic_disney.json"
+          class="themeChoice"
+        >
+          Mickey & Friends
+        </button>
+      </div>
       <div id="board">
         <button type="button" id="card1" class="row1 column1">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
         <button type="button" id="card2" class="row1 column2">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
         <button type="button" id="card3" class="row1 column3">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
         <button type="button" id="card4" class="row1 column4">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
-        <button type="button" id="card5" class="row1 column5">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+        <button type="button" id="card5" class="row2 column4">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
-        <button type="button" id="card6" class="row2 column1">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+        <button type="button" id="card6" class="row2 column2">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
-        <button type="button" id="card7" class="row2 column2">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+        <button type="button" id="card7" class="row2 column3">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
-        <button type="button" id="card8" class="row2 column3">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+        <button type="button" id="card8" class="row2 column4">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
-        <button type="button" id="card9" class="row2 column4">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+        <button type="button" id="card9" class="row3 column1">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
-        <button type="button" id="card10" class="row2 column5">
-          <img class="books" src="the_books.jpg" alt="book stack" srcset="" />
+        <button type="button" id="card10" class="row3 column2">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
+        </button>
+        <button type="button" id="card11" class="row3 column3">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
+        </button>
+        <button type="button" id="card12" class="row3 column4">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
+        </button>
+        <button type="button" id="card13" class="row4 column1">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
+        </button>
+        <button type="button" id="card14" class="row4 column2">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
+        </button>
+        <button type="button" id="card15" class="row4 column3">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
+        </button>
+        <button type="button" id="card16" class="row4 column4">
+          <div class="bookWrapper">
+            <img
+              class="booksPic"
+              src="the_books.jpg"
+              alt="book stack"
+              srcset=""
+            />
+          </div>
         </button>
       </div>
     </main>

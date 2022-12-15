@@ -1,0 +1,80 @@
+[
+    {
+        "name":"Mickey Mouse",
+        "full_name":"Mickey Mouse",
+        "species":"anthropomorphic mouse",
+        "image":"https://static.wikia.nocookie.net/disney/images/b/bf/Mickey_Mouse_Disney_1.png"
+    },
+    {
+        "name":"Minnie Mouse",
+        "full_name":"Minerva Mouse",
+        "species":"anthropomorphic mouse",
+        "image":"https://static.wikia.nocookie.net/disney/images/3/36/Minnie_Mouse_pose_.jpg"
+    },    
+    {
+        "name":"Pluto",
+        "full_name":"Pluto the Pup",
+        "species":"dog",
+        "image":"https://static.wikia.nocookie.net/disney/images/7/7b/Pluto.PNG"
+    },
+    {
+        "name":"Donald Duck",
+        "full_name":"Donald Fauntleroy Duck",
+        "species":"anthropomorphic duck",
+        "image":"https://static.wikia.nocookie.net/disney/images/d/db/Donald_Duck_Iconic.png"
+    },
+    {
+        "name":"Daisy Duck",
+        "full_name":"Daisy Duck",
+        "species":"anthropomorphic duck",
+        "image":"https://static.wikia.nocookie.net/disney/images/d/db/Donald_Duck_Iconic.png"
+    },
+    {
+        "name":"Goofy",
+        "full_name":"Goofy Goof",
+        "species":"anthropomorphic chipmunks",
+        "image":"https://static.wikia.nocookie.net/disney/images/2/27/Goofy_transparent.png"
+    },
+    {
+        "name":"Chip and Dale",
+        "full_name":"Chip and Dale",
+        "species":"anthropomorphic dog",
+        "image":"https://static.wikia.nocookie.net/disney/images/8/8b/Chip_n%27_Dale.png"
+    },
+    {
+        "name":"Huey, Dewey, & Louie",
+        "full_name":"Hubert Duck, Deuteronomy D. Duck and Louis Duck",
+        "species":"anthropomorphic triplet ducklings",
+        "image":"https://static.wikia.nocookie.net/disney/images/4/43/Huey_Dewey_Louie_artwork.jpg"
+    },
+    {
+        "name":"Clarabelle Cow",
+        "full_name":"Clarabelle Cow",
+        "species":"anthropomorphic cow",
+        "image":"https://static.wikia.nocookie.net/disney/images/c/c2/Clarabelle_Cow_Pose.jpg"
+    },
+    {
+        "name":"Scrooge McDuck",
+        "full_name":"Scrooge McDuck",
+        "species":"anthropomorphic duck",
+        "image":"https://static.wikia.nocookie.net/disney/images/0/0a/Scrooge_McDuck.jpeg"
+    },
+    {
+        "name":"Professor Ludwig Von Drake",
+        "full_name":"Professor Ludwig Von Drake",
+        "species":"anthropomorphic duck",
+        "image":"https://static.wikia.nocookie.net/disney/images/8/87/Ludwig_Von_Drake.png"
+    },
+    {
+        "name":"Professor Ludwig Von Drake",
+        "full_name":"Professor Ludwig Von Drake",
+        "species":"anthropomorphic duck",
+        "image":"https://static.wikia.nocookie.net/disney/images/8/87/Ludwig_Von_Drake.png"
+    },
+    {
+        "name":"Pete",
+        "full_name":"Peter Pete Sr.",
+        "species":"anthropomorphic cat",
+        "image":"https://static.wikia.nocookie.net/disney/images/c/ca/Pete_pose.jpg"
+    }
+]

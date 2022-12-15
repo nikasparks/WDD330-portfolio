@@ -1,19 +1,24 @@
 const board = document.querySelectorAll('#board button');
-// const dataURL = 'https://hp-api.herokuapp.com/api/characters';
-const dataURL = './the.json';
+const themeHolder = document.querySelectorAll('.themeChoice button');
+console.log(theme)
+let dataURL
+// const dataURL = `./${theme.}`;
 let characterList = [];
+themeHolder.forEach((theme) => {
+    theme.addEventListener('click',(choosenTheme) =>{
+        if (choosenTheme.){};});});
 
 function outputData(characters){
     // console.log(characters)
     let character1st = 0
     let character2nd = 0
     let cardNums = []
-    let i2 = 5
+    let i2 = 8
     let i1 = 0
     const indexNums = new Set();
     
-    while (indexNums.size < 10){
-        let x = getRndInteger(1,10)
+    while (indexNums.size < 16){
+        let x = getRndInteger(1,16)
         indexNums.add(x) 
     }
     indexNums.forEach((index) => {
@@ -23,7 +28,7 @@ function outputData(characters){
     
     for (character1st of characters) {
         let card1 = document.querySelector(`#card${cardNums[i1]}`);
-        let info1 = document.createElement('article')
+        let info1 = document.createElement('div')
         let charName1 = document.createElement('h3');
 
         let charPic1 = document.createElement('img');
@@ -38,9 +43,8 @@ function outputData(characters){
 
         console.log(charPic1)
 
-        info1.appendChild(charName1);
-        
         info1.appendChild(charPic1);
+        info1.appendChild(charName1);
         card1.appendChild(info1);
         i1++
         
@@ -48,7 +52,7 @@ function outputData(characters){
     
     for (character2nd of characters){
         let card2 = document.querySelector(`#card${cardNums[i2]}`);
-        let info2 = document.createElement('article')
+        let info2 = document.createElement('div')
         let charName2 = document.createElement('h3');
         
         let charPic2 = document.createElement('img');
@@ -63,9 +67,8 @@ function outputData(characters){
     
         console.log(charPic2)
 
-        info2.appendChild(charName2);
-
         info2.appendChild(charPic2);
+        info2.appendChild(charName2);
         card2.appendChild(info2);
         i2++
         
@@ -76,7 +79,7 @@ function pickCharacters(characters){
     const charactersFiltered = characters.filter((index) => index.image !== "");
     let gameList = []
     const indexNums = new Set();
-    while (indexNums.size < 5){
+    while (indexNums.size < 8){
         let x = getRndInteger(0,charactersFiltered.length-1)
         indexNums.add(x) 
     }
@@ -153,12 +156,12 @@ function playGame(){
                 }
             
                 else if (cardSeclected1st !== cardSelected2nd){
-                    message.innerHTML = 'Not a match! Click to try again.'
+                    message.innerHTML = 'Not a match! Try again.'
                     message.classList.remove('hiding')
                     guess1 = 0
                     guess2 = 0
                     attempts++
-                    setTimeout(() => {userPick1.classList.remove('selected');userPick2.classList.remove('selected');message.classList.add('hiding')},1500)
+                    setTimeout(() => {userPick1.classList.remove('selected');userPick2.classList.remove('selected');},1200)
                     
                 //     message.addEventListener('click',()=>{
                         
@@ -171,7 +174,7 @@ function playGame(){
                 // })
                 }
             }
-            if (wins === 5){
+            if (wins === 8){
                 message.innerHTML = `Good job, you found all the matches! You finished in ${attempts} attempts`
             }
             }
