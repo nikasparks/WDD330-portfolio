@@ -1,12 +1,10 @@
 const board = document.querySelectorAll('#board button');
-const themeHolder = document.querySelectorAll('.themeChoice button');
-console.log(theme)
+const themeHolder = document.querySelectorAll('#choiceBtns button');
+
 let dataURL
 // const dataURL = `./${theme.}`;
 let characterList = [];
-themeHolder.forEach((theme) => {
-    theme.addEventListener('click',(choosenTheme) =>{
-        if (choosenTheme.){};});});
+
 
 function outputData(characters){
     // console.log(characters)
@@ -107,8 +105,22 @@ async function getCharacters(url) {
 }
 
 // 
-
-getCharacters(dataURL);
+function getTheme(themeHolder){
+    themeHolder.forEach((theme) => {
+        theme.addEventListener('click',(chosenTheme) =>{
+            console.log(chosenTheme.target.id)
+            if (chosenTheme.target.id === 'theme1'){
+                dataURL = `./${chosenTheme.target.value}`
+                getCharacters(dataURL)
+            }
+            else if (chosenTheme.target.id === 'theme2'){
+                dataURL = `./${chosenTheme.target.value}`
+                getCharacters(dataURL)
+            };
+        });
+    });
+}
+getTheme(themeHolder);
 playGame();
 
 
